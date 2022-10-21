@@ -1,14 +1,24 @@
 <template>
-  <h1 class="display-1">Moon Star Publicity</h1>
-  <img src="./assets/logo.png" alt="Moon Star Publicity" srcset="">
+  <headerTopVue></headerTopVue>
+
 </template>
 
 <script>
-
+import headerTopVue from './components/HeaderTop.vue';
 export default {
   name: 'App',
   components: {
-  }
+    headerTopVue
+  },
+
+  data(){
+    return{
+      siteTitle: "Moon Star Publicity",
+      google: "<a href='https:www.google.com' target='_blank'>Google</a>",
+      isDisabled: false,
+    };
+  },
+
 }
 </script>
 
@@ -19,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
 }
 </style>
