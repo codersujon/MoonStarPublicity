@@ -1,5 +1,5 @@
 <template>
-  <h1>Moon Star Publicity</h1>
+  <h1 class="display-1">Moon Star Publicity</h1>
   <img src="./assets/logo.png" alt="Moon Star Publicity" srcset="">
 </template>
 
