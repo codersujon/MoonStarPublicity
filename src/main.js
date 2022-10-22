@@ -18,6 +18,7 @@ library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPin
 
 /* Bootstrap */
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.js"
 
 /* Default Styles */
 import "../src/assets/styles/css/styles.css"

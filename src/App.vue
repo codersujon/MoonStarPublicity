@@ -1,14 +1,17 @@
 <template>
   <headerTopVue></headerTopVue>
+  <MainHeaderVue></MainHeaderVue>
 
 </template>
 
 <script>
 import headerTopVue from './components/HeaderTop.vue';
+import MainHeaderVue from './layouts/Header/MainHeader.vue'
 export default {
   name: 'App',
   components: {
-    headerTopVue
+    headerTopVue,
+    MainHeaderVue
   },
 
   data(){
