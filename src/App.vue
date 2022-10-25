@@ -1,36 +1,30 @@
 <template>
-  <headerTopVue></headerTopVue>
-  <MainHeaderVue></MainHeaderVue>
-
+  <div>
+     <HeaderTop></HeaderTop>
+     <Header></Header>
+     <FooterTop></FooterTop>
+     <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import headerTopVue from './components/HeaderTop.vue';
-import MainHeaderVue from './layouts/Header/MainHeader.vue'
+import HeaderTop from './components/HeaderTop.vue'
+import Header from './layouts/Header/Header.vue'
+import Footer from './layouts/Footer/Footer.vue'
+import FooterTop from './components/FooterTop.vue'
+
 export default {
   name: 'App',
   components: {
-    headerTopVue,
-    MainHeaderVue
-  },
-
-  data(){
-    return{
-      siteTitle: "Moon Star Publicity",
-      google: "<a href='https:www.google.com' target='_blank'>Google</a>",
-      isDisabled: false,
-    };
+    HeaderTop,
+    Header,
+    FooterTop,
+    Footer,
   },
 
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+
 </style>

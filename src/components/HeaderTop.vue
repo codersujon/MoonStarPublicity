@@ -6,40 +6,35 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <span>
                         <font-awesome-icon icon="fa-solid fa-envelope" />
-                        moonstarpublicity@gmail.com
+                        {{ email }}
                     </span>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <span>
                         <font-awesome-icon icon="fa-solid fa-location-dot" />
-                        201 citycon Rd, CA 08214
+                        {{ address }}
                     </span>
                 </div>
                 <div class="col-12 col-lg-5 col-xl-6">
                     <div class="socialMedia d-flex justify-content-center justify-content-lg-end">
                         <span class="text-capitalize">follow on social</span>
                         <ul class="ml-20 list-inline">
-                            <li class="list-inline-item ml-5 mr-5">
+                            <li class="list-inline-item ml-10 mr-10">
                                 <a href="#">
                                     <font-awesome-icon icon="fa-brands fa-facebook-f" />
                                 </a>
                             </li>
-                            <li class="list-inline-item ml-5 mr-5">
+                            <li class="list-inline-item ml-10 mr-10">
                                 <a href="#">
-                                    <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                                    <font-awesome-icon icon="fa-brands fa-twitter" />
                                 </a>
                             </li>
-                            <li class="list-inline-item ml-5 mr-5">
-                                <a href="#">
-                                    <font-awesome-icon icon="fa-brands fa-pinterest-p" />
-                                </a>
-                            </li>
-                            <li class="list-inline-item ml-5 mr-5">
+                            <li class="list-inline-item ml-10 mr-10">
                                 <a href="#">
                                     <font-awesome-icon icon="fa-brands fa-instagram" />
                                 </a>
                             </li>
-                            <li class="list-inline-item ml-5 mr-5">
+                            <li class="list-inline-item ml-10 mr-10">
                                 <a href="#">
                                     <font-awesome-icon icon="fa-brands fa-youtube" />
                                 </a>
@@ -53,7 +48,15 @@
 </template>
 
 <script>
-
+export default{
+    name: 'HeaderTop',
+    data(){
+        return{
+            email: "moonstarpublicity@gmail.com",
+            address: "201 citycon Rd, CA 08214",
+        }
+    }
+}
 </script>
 
 <style scoped>

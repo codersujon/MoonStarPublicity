@@ -11,10 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faClock, faEnvelope, faLocationDot, } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookF, faInstagram, faLinkedinIn, faPinterestP, faYoutube, } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faLinkedinIn, faPinterestP, faTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPinterestP, faYoutube, faInstagram)
+library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPinterestP, faYoutube, faInstagram, faTwitter)
 
 /* Bootstrap */
 import "bootstrap/dist/css/bootstrap.min.css"

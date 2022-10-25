@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'MainHeader',
+    name: 'Header',
 }
 </script>
 
