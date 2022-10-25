@@ -1,22 +1,22 @@
 <template>
     <!-- Header Top Start -->
-    <div class="headerTop pt-10 pb-10 secondary-bg text-white">
+    <div class="headerTop pt-15 pb-15 secondary-bg text-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <span>
                         <font-awesome-icon icon="fa-solid fa-envelope" />
                         moonstarpublicity@gmail.com
                     </span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <span>
                         <font-awesome-icon icon="fa-solid fa-location-dot" />
                         201 citycon Rd, CA 08214
                     </span>
                 </div>
-                <div class="col-md-6">
-                    <div class="socialMedia d-flex justify-content-end">
+                <div class="col-12 col-lg-5 col-xl-6">
+                    <div class="socialMedia d-flex justify-content-center justify-content-lg-end">
                         <span class="text-capitalize">follow on social</span>
                         <ul class="ml-20 list-inline">
                             <li class="list-inline-item ml-5 mr-5">

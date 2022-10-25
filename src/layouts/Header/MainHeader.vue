@@ -43,24 +43,40 @@ export default {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: var(--bs-navbar-nav-link-padding-x);
-  padding-left: var(--bs-navbar-nav-link-padding-x);
   color: #F15922;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
-  padding: 12px !important;
-  transition: .3s ease-in;
+  margin: 8px 0 !important;
+  transition: .3s;
   display: inline-block;
   position: relative;
+  margin-left: 20px !important;
 }
+
 
 .navbar-expand-lg .navbar-nav .nav-link::after{
   position: absolute;
   content: "";
-  background: #F15922;
+  background-color: #2e3192;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  transition: all .3s ease-in-out;
+  visibility: hidden;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link.active::after {
+    width: 100%;
+    visibility: visible;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    visibility: visible;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link:hover{
   color:#2e3192;
@@ -68,6 +84,14 @@ export default {
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color:#2e3192 !important;
+}
+
+.navbar-toggler {
+  color: #fff;
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: 0;
+  transition: var(--bs-navbar-toggler-transition);
 }
 
 </style>
