@@ -36,6 +36,38 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.navbar{
+  box-shadow: 0 5px 30px rgb(0 24 84/ 10%);
+  padding: 0 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: var(--bs-navbar-nav-link-padding-x);
+  padding-left: var(--bs-navbar-nav-link-padding-x);
+  color: #F15922;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px !important;
+  transition: .3s ease-in;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after{
+  position: absolute;
+  content: "";
+  background: #F15922;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color:#2e3192;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color:#2e3192 !important;
+}
 
 </style>

@@ -4,10 +4,11 @@
    Author: _ThemePhi
    Version: 1.0
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #707480;
@@ -86,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   color: #1a213e;
   margin-top: 0px;
   font-weight: 700;
@@ -1530,7 +1531,7 @@ textarea:focus::placeholder {
   background: #f9f9f9;
 }
 
-.theme-bg {
+.primary-bg {
   background: #F15922;
 }
 
@@ -1547,6 +1548,10 @@ textarea:focus::placeholder {
   color: #1a213e;
 }
 
-.theme-color {
+.primary-color {
   color: #F15922;
+}
+
+.secondary-color {
+  color: #2e3192;
 }

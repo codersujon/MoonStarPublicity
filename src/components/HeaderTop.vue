@@ -57,5 +57,8 @@
 </script>
 
 <style scoped>
+.socialMedia a:hover{
+    color: #fa6c38;
+}
 
 </style>
