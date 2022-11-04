@@ -10,11 +10,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faClock, faEnvelope, faLocationDot, } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faLinkedinIn, faPinterestP, faTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPinterestP, faYoutube, faInstagram, faTwitter)
+library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPinterestP, faYoutube, faInstagram, faTwitter, faPhone)
+
+// Vuper Slider
+import 'vueperslides/dist/vueperslides.css'
+
 
 /* Bootstrap */
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -22,7 +26,6 @@ import "bootstrap/dist/js/bootstrap.bundle.js"
 
 /* Default Styles */
 import "../src/assets/styles/css/styles.css"
-
 
 
 

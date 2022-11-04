@@ -1,6 +1,6 @@
 <template>
     <!-- Header Top Start -->
-    <div class="headerTop pt-15 pb-15 secondary-bg text-white">
+    <div class="headerTop pt-15 pb-15 secondary-bg text-white d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                     <span>
-                        <font-awesome-icon icon="fa-solid fa-location-dot" />
+                        <font-awesome-icon icon="fa-solid fa-location-dot primary-color" />
                         {{ address }}
                     </span>
                 </div>

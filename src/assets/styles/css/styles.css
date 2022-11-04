@@ -1,7 +1,7 @@
 /*
-   Template Name: Karx - HTML5 Template
+   Template Name: MoonStar Publicity - HTML5 Template
    Description: 
-   Author: _ThemePhi
+   Author: _PositiveWorld
    Version: 1.0
  */
 /* Google Fonts */
@@ -131,6 +131,10 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+ul, li{
+  list-style:  none;
 }
 
 ul {

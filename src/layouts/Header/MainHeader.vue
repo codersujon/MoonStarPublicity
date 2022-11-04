@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'MainHeader',
 }
 </script>
 
@@ -43,7 +43,7 @@ export default {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #F15922;
+  color: var(--moon-primary);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
@@ -58,7 +58,7 @@ export default {
 .navbar-expand-lg .navbar-nav .nav-link::after{
   position: absolute;
   content: "";
-  background-color: #2e3192;
+  background-color: var(--moon-secondary);
   height: 2px;
   width: 0%;
   left: 0;
@@ -79,19 +79,17 @@ export default {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover{
-  color:#2e3192;
+  color: var(--moon-secondary);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
-  color:#2e3192 !important;
+  color: var(--moon-secondary) !important;
 }
 
 .navbar-toggler {
-  color: #fff;
+  color: var(--white);
   background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: 0;
-  transition: var(--bs-navbar-toggler-transition);
 }
 
 </style>

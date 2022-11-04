@@ -1,7 +1,7 @@
 <template>
   <div>
      <HeaderTop></HeaderTop>
-     <Header></Header>
+     <MainHeader></MainHeader>
      <FooterTop></FooterTop>
      <Footer></Footer>
   </div>
@@ -9,15 +9,17 @@
 
 <script>
 import HeaderTop from './components/HeaderTop.vue'
-import Header from './layouts/Header/Header.vue'
+import MainHeader from './layouts/Header/MainHeader.vue'
 import Footer from './layouts/Footer/Footer.vue'
 import FooterTop from './components/FooterTop.vue'
+
+
 
 export default {
   name: 'App',
   components: {
     HeaderTop,
-    Header,
+    MainHeader,
     FooterTop,
     Footer,
   },
