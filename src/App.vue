@@ -1,27 +1,24 @@
 <template>
-  <div>
-     <HeaderTop></HeaderTop>
-     <MainHeader></MainHeader>
-     <FooterTop></FooterTop>
-     <Footer></Footer>
-  </div>
+    <div>
+      <HeaderVue/>
+        <main>
+            <router-view></router-view>
+        </main>
+      <FooterVue/>
+    </div>
 </template>
 
 <script>
-import HeaderTop from './components/HeaderTop.vue'
-import MainHeader from './layouts/Header/MainHeader.vue'
-import Footer from './layouts/Footer/Footer.vue'
-import FooterTop from './components/FooterTop.vue'
+import HeaderVue from './layouts/Header/Header.vue';
+import FooterVue from './layouts/Footer/Footer.vue';
 
 
 
 export default {
   name: 'App',
   components: {
-    HeaderTop,
-    MainHeader,
-    FooterTop,
-    Footer,
+      HeaderVue,
+      FooterVue,
   },
 
 }

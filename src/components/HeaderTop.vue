@@ -52,8 +52,8 @@ export default{
     name: 'HeaderTop',
     data(){
         return{
-            email: "moonstarpublicity@gmail.com",
-            address: "201 citycon Rd, CA 08214",
+            email: "moonstar.amr@gmail.com",
+            address: "South Keranigonj, Dhaka-1310",
         }
     }
 }

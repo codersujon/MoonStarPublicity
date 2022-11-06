@@ -39,18 +39,19 @@
                             <h4 class="secondary-color">get in touch</h4>
                         </div>
                         <div class="footer__address">
-                            <p>Office 8 Road 5 , north city Berlin, <br> Germeny City</p>
-                        </div>
+                            <p>Mahtab Soap Factory Road, Shubhadya, <br> Purbo Para, South Keranigonj, Dhaka-1310.</p>
+                        </div> 
+
                         <div class="footer__email mb-20">
-                            <li>moonstarpublicity@gmail.com</li>
-                            <li>help@moonstarpublicity.com</li>
+                            <li>moonstar.amr@gmail.com</li>
+                            <li>info@moonstarpublicity.com</li>
                         </div>
                         <div class="footer__phone d-flex align-items-center">
                             <div class="icon mr-10">
                                 <font-awesome-icon icon="fa-solid fa-phone" />
                             </div>
                             <div class="text">
-                                <a href="tel:+8801970 366 446"> +880 1970 366 446</a>
+                                <a href="tel:+8801970 366 446"> +880 1715-042128</a>
                             </div>
                         </div>
                     </div>

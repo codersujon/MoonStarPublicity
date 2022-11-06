@@ -1,6 +1,9 @@
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../src/assets/styles/css/styles.css"
+
 import { createApp } from 'vue'
 import App from './App.vue'
-
+import router from './router/index.js';
 
 
 /* import the fontawesome core */
@@ -16,17 +19,9 @@ import { faFacebookF, faInstagram, faLinkedinIn, faPinterestP, faTwitter, faYout
 /* add icons to the library */
 library.add(faEnvelope, faClock, faLocationDot, faFacebookF, faLinkedinIn, faPinterestP, faYoutube, faInstagram, faTwitter, faPhone)
 
-// Vuper Slider
-import 'vueperslides/dist/vueperslides.css'
 
+createApp(App).component('font-awesome-icon', FontAwesomeIcon)
+.use(router)
+.mount('#app');
 
-/* Bootstrap */
-import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
-
-/* Default Styles */
-import "../src/assets/styles/css/styles.css"
-
-
-
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
