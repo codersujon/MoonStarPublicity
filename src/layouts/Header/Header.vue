@@ -1,6 +1,6 @@
 <template>
     <header class="moon_header">
-        <HeaderTop/>
+        <!-- <HeaderTop/> -->
         <NavbarVue/>
     </header>
 </template>

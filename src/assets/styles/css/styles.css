@@ -13,10 +13,11 @@
     --white: #fff;
     --white-rgb: 255,  255, 255;
     --black: #000;
-    --moon-black: #060606;
+    --moon-black: #010F2E;
     --moon-black-rgb: 6, 6, 6;
     --moon-primary: #f15922;
-    --moon-secondary: #2e3192;
+    --moon-secondary: #2CB34C;
+    --moon-3rd: #01233f;
 };
 
 
@@ -1529,7 +1530,11 @@ textarea:focus::placeholder {
 
 /* <<<<<<<    Background color     >>>>>>>>> */
 .black-bg {
-  background: #1a213e;
+  background: var(--moon-black);
+}
+
+.black-lightbg{
+  background: #01233f;
 }
 
 .white-bg {
@@ -1547,6 +1552,7 @@ textarea:focus::placeholder {
 .secondary-bg {
   background: var(--moon-secondary);
 }
+
 
 /* <<<<<<<    Color     >>>>>>>>> */
 .white-color {

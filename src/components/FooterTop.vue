@@ -1,11 +1,11 @@
 <template>
-    <div class="FooterTop pt-110 pb-60">
+    <div class="FooterTop black-bg pt-110 pb-60">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="footer__widget mb-50">
                         <a href="index.html">
-                            <img src="../assets/logo.png" alt="logo">
+                            <img src="../assets/Logo-white.png" alt="logo">
                         </a>
                         <p class="mt-15 mb-25" v-text="what_we"></p>
                         <div class="footer__widget__socials">
