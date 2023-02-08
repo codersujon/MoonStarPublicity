@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="footer__widget mb-50">
                         <a href="index.html">
-                            <img src="../assets/Logo-white.png" alt="logo">
+                            <img src="../assets/logo.png" alt="logo">
                         </a>
                         <p class="mt-15 mb-25" v-text="what_we"></p>
                         <div class="footer__widget__socials">
@@ -72,7 +72,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 .footer__widget__socials>a {
     display: inline-block;
     width: 45px;
