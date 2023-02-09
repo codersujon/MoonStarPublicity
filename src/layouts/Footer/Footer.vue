@@ -10,12 +10,12 @@
                             <p class="m-0 text-white">Copyright &copy; {{ year }} <a href="http://www.moonstarpublicity.com/" class="secondary-color fw-bold" target="_blank"> {{ site_title }} </a>. All Rights Reserved.</p>  
                         </div>
                     </div>
-                    <div class="col-lg-6 "> 
+                    <div class="col-lg-6"> 
                         <div class="legal-pages f-right">
                             <ul>
                                 <li><a href="#">privacy</a></li>
                                 <li><a href="#">term &amp; conditions</a></li>
-                                <li><a href="#">legal</a></li>
+                                <li><a href="#">FAQ</a></li>
                                 <li> 
                                     <span class="footer-social">                                    
                                         <a href="#">
@@ -66,12 +66,28 @@ export default {
 }
 .legal-pages ul li{
     margin-right: 30px;
+    padding-left: 15px;
+    margin-left: 10px;
     color: #fff;
+    position: relative;
 }
-.legal-pages ul li a{
+.legal-pages li a{
+    color: #fff;
     text-transform: capitalize;
 }
-
+.legal-pages li:last-child::before{
+    display: none;
+}
+.legal-pages li::before {
+    background-color: rgb(118, 194, 27);
+    width: 8px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 8px;
+    border-radius: 8px;
+}
 .footer-social a{
     font-size: 14px;
     display: inline-block;
@@ -84,5 +100,8 @@ export default {
     line-height: 36px;
     color: rgb(255, 255, 255) !important;
 }
-.footer-social a:hover{background: rgba(118, 194, 27, 1); color: #fff !important;}
+.footer-social a:hover{
+    background: rgba(118, 194, 27, 1); 
+    color: #fff !important;
+}
 </style>
