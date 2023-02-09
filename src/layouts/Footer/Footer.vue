@@ -2,15 +2,15 @@
     <footer class="moon_footer">
         <FooterTop/>
 
-        <div class="black-lightbg">
+        <div class="black-lightbg pt-10 pb-10">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-6">
-                        <div class="copyright pt-10 pb-10">
+                    <div class="col-xl-5 col-lg-4 col-md-12">
+                        <div class="copyright text-sm-center">
                             <p class="m-0 text-white">Copyright &copy; {{ year }} <a href="http://www.moonstarpublicity.com/" class="secondary-color fw-bold" target="_blank"> {{ site_title }} </a>. All Rights Reserved.</p>  
                         </div>
                     </div>
-                    <div class="col-lg-6"> 
+                    <div class="col-xl-7 col-lg-8 col-md-12"> 
                         <div class="legal-pages f-right">
                             <ul>
                                 <li><a href="#">privacy</a></li>

@@ -2,7 +2,7 @@
     <div class="FooterTop black-bg pt-110 pb-60">
         <div class="container">
             <div class="row d-flex justify-content-between">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                     <div class="f-widget-title mb-45">
                         <a href="index.html">
@@ -22,7 +22,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                     <div class="f-widget-title">
                         <h2>Our Links</h2>
@@ -51,7 +51,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                     <div class="f-widget-title">
                         <h2>Get In Touch</h2>
@@ -74,7 +74,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                     <div class="f-widget-title">
                         <h2>Our Gallery</h2>
