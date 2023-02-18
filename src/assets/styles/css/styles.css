@@ -12,6 +12,7 @@
     --moon-font-secondary: 'Rubik', sans-serif;
     --white: #fff;
     --white-rgb: 255,  255, 255;
+    --grey: #eaeaea;
     --black: #000;
     --moon-black: #010f2e;
     --moon-black-rgb: 6, 6, 6;
@@ -1573,4 +1574,106 @@ textarea:focus::placeholder {
 
 .secondary-color {
   color: var(--moon-secondary)
+}
+
+/* Section Title */
+.section-title span,
+.section-title-white span {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 5px;
+  display: block;
+}
+.section-title h2,
+.section-title-white h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+.section-title h2:before,
+.section-title-white h2:before {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 2px;
+  background: #e16038;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title-white span,
+.section-title-white h2,
+.section-title-white p {
+  color: #ffffff;
+}
+
+
+/*--
+    - Overlay
+------------------------------------------*/
+[data-overlay] {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+[data-overlay]::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/*-- Overlay Color --*/
+[data-overlay=light]::before {
+  background-color: #ffffff;
+}
+
+[data-overlay=dark]::before {
+  background-color: var(--moon-black);
+}
+
+/*-- Overlay Opacity --*/
+[data-opacity="1"]::before {
+  opacity: 0.1;
+}
+
+[data-opacity="2"]::before {
+  opacity: 0.2;
+}
+
+[data-opacity="3"]::before {
+  opacity: 0.3;
+}
+
+[data-opacity="4"]::before {
+  opacity: 0.4;
+}
+
+[data-opacity="5"]::before {
+  opacity: 0.5;
+}
+
+[data-opacity="6"]::before {
+  opacity: 0.6;
+}
+
+[data-opacity="7"]::before {
+  opacity: 0.7;
+}
+
+[data-opacity="8"]::before {
+  opacity: 0.8;
+}
+
+[data-opacity="9"]::before {
+  opacity: 0.9;
 }

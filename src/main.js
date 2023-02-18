@@ -24,4 +24,11 @@ createApp(App).component('font-awesome-icon', FontAwesomeIcon)
 .use(router)
 .mount('#app');
 
-import "bootstrap/dist/js/bootstrap.bundle.js"
+import "bootstrap/dist/js/bootstrap.bundle.js";
+
+
+
+
+
+
+

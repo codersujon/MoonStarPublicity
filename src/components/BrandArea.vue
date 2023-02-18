@@ -1,41 +1,57 @@
 <template>
-    <div class="brand-area pt-80 pb-80 text-center">
+    <div class="brand-area  pt-80 pb-80 text-center grey-bg">
         <div class="container">
+            <!-- <div class="row">
+                <div class="section-title text-center mb-80">
+                    <h2>Our Happy Client</h2>
+                </div>
+            </div> -->
             <div class="row justify-content-center align-items-center">
                 <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                       <a href="#" class="brand-1"></a>
+                        <div class="single-brand mb-30">
+                           <a href="#" class="brand-1"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                        <a href="#" class="brand-2"></a>
+                    <div class="col-xl-2">
+                        <div class="single-brand mb-30">
+                            <a href="#" class="brand-2"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                        <a href="#" class="brand-3"></a>
+                    <div class="col-xl-2">
+                        <div class="single-brand mb-30">
+                            <a href="#" class="brand-3"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                        <a href="#" class="brand-4"></a>
+                    <div class="col-xl-2">
+                        <div class="single-brand mb-30">
+                            <a href="#" class="brand-4"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                        <a href="#" class="brand-5"></a>
+                    <div class="col-xl-2">
+                        <div class="single-brand mb-30">
+                            <a href="#" class="brand-5"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-2">
-                    <div class="single-brand mb-30">
-                        <a href="#" class="brand-6"></a>
+                    <div class="col-xl-2">
+                        <div class="single-brand mb-30">
+                            <a href="#" class="brand-6"></a>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        name: "BrandArea",
+        data() {
+            return {
+            }
+        },
+    }
+</script>
+
 
 
 <style scoped>
