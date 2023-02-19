@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-     <!-- Work Process -->
-     <WorkProcess/>
-
+    <!-- Slider Start -->
+    <Slider/>
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -11,6 +10,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Work Process -->
+        <WorkProcess/>
         
          <!-- Brand Area -->
         <BrandArea/>
@@ -18,6 +20,7 @@
 </template>
 
 <script>
+import Slider from '@/components/Slider.vue';
 import WorkProcess from '@/components/WorkProcess.vue';
 import BrandArea from '../components/BrandArea.vue'
 import WyChooseUs from '@/components/WyChooseUs.vue';
@@ -28,12 +31,13 @@ import WyChooseUs from '@/components/WyChooseUs.vue';
     components:{
       BrandArea,
       WyChooseUs,
-      WorkProcess
+      WorkProcess,
+      Slider
     }
   }
 
 </script>
 
-<style>
+<style scoped>
 
 </style>

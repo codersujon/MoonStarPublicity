@@ -1576,42 +1576,6 @@ textarea:focus::placeholder {
   color: var(--moon-secondary)
 }
 
-/* Section Title */
-.section-title span,
-.section-title-white span {
-  font-size: 18px;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: 5px;
-  display: block;
-}
-.section-title h2,
-.section-title-white h2 {
-  font-size: 35px;
-  text-transform: capitalize;
-  font-weight: 500;
-  margin-bottom: 20px;
-  padding: 10px;
-  position: relative;
-}
-.section-title h2:before,
-.section-title-white h2:before {
-  position: absolute;
-  content: "";
-  width: 59px;
-  height: 2px;
-  background: #e16038;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.section-title-white span,
-.section-title-white h2,
-.section-title-white p {
-  color: #ffffff;
-}
-
 
 /*--
     - Overlay
@@ -1629,7 +1593,7 @@ textarea:focus::placeholder {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 /*-- Overlay Color --*/
@@ -1677,3 +1641,42 @@ textarea:focus::placeholder {
 [data-opacity="9"]::before {
   opacity: 0.9;
 }
+
+/* Section Title */
+.section-title span,
+.section-title-white span {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 5px;
+  display: block;
+}
+.section-title h2,
+.section-title-white h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+.section-title h2:before,
+.section-title-white h2:before {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 2px;
+  background: var(--moon-primary);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.section-title-white span,
+.section-title-white h2,
+.section-title-white p {
+  color: var(--white);
+}
+
+

@@ -1,7 +1,7 @@
 <template>
   <!-- WORK PROCESS START -->
     <div class="process-area pt-60 pb-30" data-background="../assets/images/process-back.jpg" data-overlay="dark"
-                data-opacity="8">
+                data-opacity="5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -59,7 +59,7 @@
     background-image: url("../assets/images/process-back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     z-index: 1;
 }
 .single-process h3,
