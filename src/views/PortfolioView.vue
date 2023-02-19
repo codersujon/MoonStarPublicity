@@ -1,18 +1,28 @@
 <template>
-  <div class="about">
-    <div class="container">
-        <div class="row">
-           <div class="col-12">
-              <h1 class="display-1 text-center py-5">Portfolio Page</h1>
-           </div>
-        </div>
-    </div>
+  <div class="Portfolio">
+    
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <PortfolioArea/>
+            </div>
+          </div>
+      </div>
+
+     <!-- Brand Area -->
+     <BrandArea/>
   </div>
 </template>
 
 <script>
+import PortfolioArea from '@/components/PortfolioArea.vue';
+import BrandArea from '@/components/BrandArea.vue';
 export default {
-  name: 'Portfolio'
+  name: 'Portfolio',
+  components:{
+    PortfolioArea,
+    BrandArea
+  }
 }
 </script>
 

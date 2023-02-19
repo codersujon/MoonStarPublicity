@@ -1666,7 +1666,7 @@ textarea:focus::placeholder {
   content: "";
   width: 59px;
   height: 2px;
-  background: var(--moon-primary);
+  background: var(--moon-secondary);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
