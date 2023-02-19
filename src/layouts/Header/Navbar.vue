@@ -42,7 +42,7 @@ export default {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: var(--moon-primary);
+  color: var(--moon-secondary);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
@@ -57,7 +57,7 @@ export default {
 .navbar-expand-lg .navbar-nav .nav-link::after{
   position: absolute;
   content: "";
-  background-color: var(--moon-secondary);
+  background-color: var(--moon-primary);
   height: 2px;
   width: 0%;
   left: 0;
@@ -78,7 +78,7 @@ export default {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover{
-  color: var(--moon-secondary);
+  color: var(--moon-primary);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {

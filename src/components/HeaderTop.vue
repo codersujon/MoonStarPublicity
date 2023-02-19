@@ -61,7 +61,7 @@ export default{
 
 <style scoped>
 .socialMedia a:hover{
-    color: #fa6c38;
+    color: var(--moon-secondary);
 }
 
 </style>

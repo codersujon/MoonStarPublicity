@@ -103,7 +103,7 @@
 .about-area .habout__img:after {
   position: absolute;
   content: "";
-  background: #e16038;
+  background: var(--moon-secondary);
   width: 100%;
   height: 100%;
   right: -15px;
@@ -111,7 +111,7 @@
   z-index: -1;
 }
 .about-area .ability__single-btn a {
-  color: #e16038;
+  color: var(--moon-secondary);
 }
 .about-area .ability__single-btn a i {
   margin-left: 5px;
