@@ -14,6 +14,7 @@
               <router-link to="/about" :class="nav">About</router-link>
               <router-link to="/portfolio" :class="nav">Portfolio</router-link>
               <router-link to="/services" :class="nav">Services</router-link>
+              <router-link to="/clients" :class="nav">Clients</router-link>
               <router-link to="/contact" :class="nav">Contact</router-link>
             </ul>
           </div>

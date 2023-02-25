@@ -30,22 +30,22 @@
                     <div class="footer-link">
                         <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="about.html"> About Us</a>
+                            <a href="#about"> About Us</a>
                         </li>
                         <li>
-                            <a href="services.html"> Services </a>
+                            <a href="#services"> Services </a>
                         </li>
                         <li>
-                            <a href="blog.html">Blog </a>
+                            <a href="#portfolio"> Portfolio </a>
                         </li>
                         <li>
-                            <a href="#">Support</a>
+                            <a href="#clients">Clients</a>
                         </li>
                         <li>
-                            <a href="contact.html"> Contact Us</a>
+                            <a href="#contact"> Contact Us</a>
                         </li>
                         </ul>
                     </div>
@@ -65,8 +65,6 @@
                         <li>
                             <font-awesome-icon icon="fa-solid fa-envelope" />
                             <span>
-                            <a href="mailto:info@example.com">moonstar.amr@gmail.com</a>
-                            <br>
                             <a href="mailto:help@example.com">info@moonstarpublicity.com</a>
                             </span>
                         </li>

@@ -4,6 +4,7 @@ import Home from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import Portfolio from '../views/PortfolioView.vue'
 import Services from '../views/ServicesView.vue'
+import Clients from '../views/ClientsView.vue'
 import Contact from '../views/ContactView.vue'
 
 const routes = [
@@ -33,6 +34,13 @@ const routes = [
         component: Services,
         meta:{
             title: 'Services'
+        } 
+  },
+  {     path: '/clients', 
+        name: 'Clients',
+        component: Clients,
+        meta:{
+            title: 'Clients'
         } 
   },
   {     path: '/contact', 
