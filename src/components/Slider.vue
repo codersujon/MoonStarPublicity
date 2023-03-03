@@ -1,12 +1,24 @@
 <template>
     <!-- SLIDER START -->
-		<div class="slider-area owl-carousel">
+		<div class="slider-area">
 			<div class="single-slide d-flex align-items-center pt-80 pb-80">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-12">
 							<div class="hslide text-center">
-								<img src="../assets/images/slider/home.png" alt="MoonstartHome" class="img-fluid">
+								<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="../assets/images/slider/home.png" alt="MoonstartHome" class="img-fluid">
+										</div>
+										<div class="carousel-item">
+											<img src="../assets/images/slider/home.png" alt="MoonstartHome" class="img-fluid">
+										</div>
+										<div class="carousel-item">
+											<img src="../assets/images/slider/home.png" alt="MoonstartHome" class="img-fluid">
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -15,7 +27,7 @@
 		</div>
 		<!-- SLIDER END -->
 </template>
-  
+
 <script>
     export default {
         name: 'Slider',
