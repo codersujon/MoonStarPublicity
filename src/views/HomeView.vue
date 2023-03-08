@@ -5,14 +5,14 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <!-- Why Choose Us -->
-                <WyChooseUs/>
+              <!-- Message From Chairman -->
+                <MsgChairman/>
             </div>
           </div>
         </div>
 
         <!-- Work Process -->
-        <WorkProcess/>
+        <!-- <WorkProcess/> -->
         
          <!-- Brand Area -->
         <BrandArea/>
@@ -24,15 +24,17 @@ import Slider from '@/components/Slider.vue';
 import WorkProcess from '@/components/WorkProcess.vue';
 import BrandArea from '../components/BrandArea.vue'
 import WyChooseUs from '@/components/WyChooseUs.vue';
+import MsgChairman from '@/components/MsgChairman.vue';
 
   export default {
     name: 'Home',
 
     components:{
       BrandArea,
+      MsgChairman,
       WyChooseUs,
       WorkProcess,
-      Slider
+      Slider,
     }
   }
 

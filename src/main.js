@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../src/assets/styles/css/styles.css"
+import 'animate.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'

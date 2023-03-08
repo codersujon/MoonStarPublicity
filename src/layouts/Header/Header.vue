@@ -1,5 +1,5 @@
 <template>
-    <header class="moon_header sticky-top bg-light">
+    <header class="moon_header sticky-top bg-white">
         <!-- <HeaderTop/> -->
         <NavbarVue/>
     </header>
