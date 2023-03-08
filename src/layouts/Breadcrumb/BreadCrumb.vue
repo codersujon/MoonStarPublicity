@@ -23,7 +23,7 @@
 
 <style scoped>
 #page-header {
-  /* background: url("https://thumbs.dreamstime.com/b/summer-sunny-forest-trees-green-grass-nature-wood-sunlight-background-instant-toned-image-53353502.jpg") no-repeat; */
+  background: url("../../assets/images/page-header-bg-5.jpg") no-repeat;
   background-size: cover;
   min-height: 300px;
   background-attachment: fixed; 

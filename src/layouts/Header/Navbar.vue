@@ -11,7 +11,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <router-link to="/" :class="nav">Home</router-link>
-              <router-link to="/about" :class="nav">About</router-link>
+              <!-- <router-link to="/about" :class="nav">About</router-link> -->
               <router-link to="/portfolio" :class="nav">Portfolio</router-link>
               <router-link to="/services" :class="nav">Services</router-link>
               <router-link to="/clients" :class="nav">Clients</router-link>

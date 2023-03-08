@@ -1,6 +1,6 @@
 <template>
     <!-- SLIDER START -->
-		<div class="slider-area animate__animated animate__slideInUp">
+		<div class="slider-area animate__animated animate__fadeIn">
 			<div class="single-slide d-flex align-items-center pt-80 pb-80">
 				<div class="container">
 					<div class="row">

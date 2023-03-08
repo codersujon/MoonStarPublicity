@@ -5,27 +5,25 @@
 				<div class="habout">
 					<div class="row">
 						<div class="col-xl-6 col-lg-6 col-md-12">
-							<div class="habout__content mb-30">
-								<h3>Welcome to Our Company</h3>
-								<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi fugit iusto
-									nostrum delectus. Perferendis molestiae asperiores labore consectetur. Voluptatibus
-									debitis odit aliquam non voluptatum possimus repellat atque laudantium asperiores
-									minima adipisci quod, soluta ab commodi, quas eaque aperiam provident?</p>
-								<div class="row">
+							<div class="habout__content  mb-30">
+								<h3 class="animate__animated animate__fadeInUp animate__delay-.5s">Company at a glance</h3>
+								<p class="animate__animated animate__fadeInUp animate__delay-.8s">Moon Star Publicity starts journey in the real estate business in 2010 with a view to providing esthetic apartments for the contemporary city lifestyle. For more than 12 years, we have grown ourselves as a developer for providing functional apartments to our deserving clients.</p>
+								<p>Inspired by the unique architectural thought our apartments arranged in a truly unique cascade of nature for luxury living.</p>
+								<div class="row animate__animated animate__fadeInUp animate__delay-1s">
 									<div class="col-xl-6 col-lg-6 col-md-6">
 										<ul>
-											<li><i class="far fa-thumbs-up"></i> Awesome Design</li>
-											<li><i class="far fa-thumbs-up"></i> Better Client Service</li>
-											<li><i class="far fa-thumbs-up"></i> Creative Design</li>
-											<li><i class="far fa-thumbs-up"></i> Digital Marketing & Branding</li>
+											<li><font-awesome-icon icon="fa-solid fa-thumbs-up"/> Awesome Design</li>
+											<li><font-awesome-icon icon="fa-solid fa-thumbs-up"/> Better Client Service</li>
+											<li><font-awesome-icon icon="fa-solid fa-thumbs-up"/> Creative Design</li>
+											<li><font-awesome-icon icon="fa-solid fa-thumbs-up"/> Digital Marketing & Branding</li>
 										</ul>
 									</div>
 									<div class="col-xl-6 col-lg-6 col-md-6">
 										<ul>
-											<li><i class="far fa-thumbs-up"></i> Awesome Design</li>
-											<li><i class="far fa-thumbs-up"></i> Better Client Service</li>
-											<li><i class="far fa-thumbs-up"></i> Creative Design</li>
-											<li><i class="far fa-thumbs-up"></i> Digital Marketing & Branding</li>
+											<li> <font-awesome-icon icon="fa-solid fa-thumbs-up"/> Awesome Design</li>
+											<li> <font-awesome-icon icon="fa-solid fa-thumbs-up"/> Better Client Service</li>
+											<li> <font-awesome-icon icon="fa-solid fa-thumbs-up"/> Creative Design</li>
+											<li> <font-awesome-icon icon="fa-solid fa-thumbs-up"/> Digital Marketing & Branding</li>
 										</ul>
 									</div>
 								</div>
@@ -35,41 +33,38 @@
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-12">
-							<div class="habout__img mb-30">
-								<img src="../assets/images/about/about.jpg" alt="" class="img-fluid">
+							<div class="habout__img mb-30 animate__animated animate__fadeInUp animate__delay-1s">
+								<img src="../assets/images/about/about.jpg" alt="" class="img-fluid rounded img-thumbnail">
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="ability mt-80">
 					<div class="row">
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="ability__single mb-30">
+						<div class="col-sm-6 col-md-4">
+							<div class="ability__single animate__animated animate__slideInLeft animate__delay-1.5s mb-30">
 								<h4>Mission</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure saepe error ad
-									vitae dolorum perspiciatis quidem quasi a! Aliquid!</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit repellendus eum quis! Quidem, iure!</p>
 								<div class="ability__single-btn">
-									<a href="">Read More <i class="fas fa-arrow-right"></i></a>
+									<a href="">Read More <font-awesome-icon icon="fa-solid fa-arrow-right" /></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="ability__single mb-30">
+						<div class="col-sm-6 col-md-4">
+							<div class="ability__single animate__animated animate__slideInUp animate__delay-1.8s mb-30">
 								<h4>Vision</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure saepe error ad
-									vitae dolorum perspiciatis quidem quasi a! Aliquid!</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit repellendus eum quis! Quidem, iure!</p>
 								<div class="ability__single-btn">
-									<a href="">Read More <i class="fas fa-arrow-right"></i></a>
+									<a href="">Read More <font-awesome-icon icon="fa-solid fa-arrow-right" /></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="ability__single mb-30">
+						<div class="col-sm-6 col-md-4">
+							<div class="ability__single animate__animated animate__slideInRight animate__delay-2s mb-30">
 								<h4>History</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure saepe error ad
-									vitae dolorum perspiciatis quidem quasi a! Aliquid!</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit repellendus eum quis! Quidem, iure!</p>
 								<div class="ability__single-btn">
-									<a href="">Read More <i class="fas fa-arrow-right"></i></a>
+									<a href="">Read More <font-awesome-icon icon="fa-solid fa-arrow-right" /></a>
 								</div>
 							</div>
 						</div>
@@ -100,16 +95,7 @@
 .about-area .habout__img {
   position: relative;
 }
-.about-area .habout__img:after {
-  position: absolute;
-  content: "";
-  background: var(--moon-secondary);
-  width: 100%;
-  height: 100%;
-  right: -15px;
-  bottom: -15px;
-  z-index: -1;
-}
+
 .about-area .ability__single-btn a {
   color: var(--moon-secondary);
 }
