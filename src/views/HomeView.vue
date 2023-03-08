@@ -21,21 +21,17 @@
 <script>
 import Slider from '@/components/Slider.vue';
 import AboutVue from '@/components/About.vue';
-import WorkProcess from '@/components/WorkProcess.vue';
-import BrandArea from '../components/BrandArea.vue'
-import WyChooseUs from '@/components/WyChooseUs.vue';
 import MsgChairman from '@/components/MsgChairman.vue';
+import BrandArea from '../components/BrandArea.vue'
 
   export default {
     name: 'Home',
 
     components:{
       BrandArea,
+      Slider,
       AboutVue,
       MsgChairman,
-      WyChooseUs,
-      WorkProcess,
-      Slider,
     }
   }
 

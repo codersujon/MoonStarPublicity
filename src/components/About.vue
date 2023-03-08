@@ -28,7 +28,7 @@
 									</div>
 								</div>
 								<div class="habout__content-btn">
-									<a href="" class="h-btn a-btn">Read More</a>
+									<a href="" class="h-btn a-btn animate__animated animate__fadeInUp animate__delay-.8s">Read More</a>
 								</div>
 							</div>
 						</div>

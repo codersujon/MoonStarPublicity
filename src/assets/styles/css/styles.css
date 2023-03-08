@@ -1680,3 +1680,32 @@ textarea:focus::placeholder {
 }
 
 
+/* Button */
+.h-btn {
+  background-color: var(--moon-primary);
+  color: var(--white);
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: 0.3s ease-out;
+  border-radius: 5px;
+}
+.h-btn:hover {
+  background: transparent;
+  border-color: var(--moon-primary);
+  color: var(--moon-primary);;
+}
+
+.btn-border {
+  background: transparent;
+  border-color: var(--moon-primary);
+  color: #e16038;
+}
+.btn-border:hover {
+  background-color: #e16038;
+  border-color: #e16038;
+  color: #ffffff;
+}
