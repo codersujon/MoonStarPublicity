@@ -1,0 +1,72 @@
+name: Moon Star Publicity
+
+on:
+    push:
+        branches:
+            - main
+
+jobs: # Job 1: Build Moon Star Publicity Application 
+    Build:
+        name: Build
+        runs-on: ubuntu-latest # Runner
+    
+        steps:
+
+            # Step 1: Checkout Repository
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            # Step 2: Setup PHP
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '8.4'
+                extensions: mbstring, xml, curl, mysqli
+            
+            # Step 3: Verify PHP Version
+            - name: Verify PHP Version
+              run: php -v
+            
+            # ‍Step 4: PHP Syntax Check
+            - name: PHP Syntax Check
+              run: |
+                find . -type f -name "*.php" \
+                ! -path "./vendor/*" \
+                -print0 | xargs -0 -n1 php -l
+
+            # Step 5: Dangerous Function Detection
+            - name: Detect Debug Functions
+              run: |
+                ! grep -R "var_dump(" .
+                ! grep -R "print_r(" .
+                ! grep -R "die(" .
+    
+            # Step 6: Secret Detection
+            - name: Detect Secrets
+              run: |
+                ! grep -R "DB_PASSWORD" .
+                ! grep -R "API_KEY" .
+            
+            # Step 7: File Permission Check
+            - name: File Permissions
+              run: ls -la
+            
+            # Step 8: Large File Detection
+            - name: Detect Large Files
+              run: | 
+                if find . -type f -size +50M | grep -q .; then
+                  echo "Large files detected!"
+                  find . -type f -size +50M
+                  exit 1
+                fi
+
+            # Step 9: Validate Important Files
+            - name: Verify Required Files
+              run: |
+                test -f index.php
+                test -f mail.php
+
+            # Step 10: Verify Directories
+            - name: Verify Directories
+              run: |
+                test -d assets
