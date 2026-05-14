@@ -63,8 +63,8 @@ jobs: # Job 1: Build Moon Star Publicity Application
                   find . -type f -size +50M \
                   ! -path "./.git/*" \
                   ! -path "./vendor/*" \
-                  ! -path "./node_modules/*"
-                  
+                  ! -path "./node_modules/*" -print
+
                   exit 1
                 fi
 
