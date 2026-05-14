@@ -73,7 +73,7 @@ jobs: # Job 1: Build Moon Star Publicity Application
 
                   exit 1
                 fi
-                
+
                 echo "✅ No large files found"
 
             # Step 9: Validate Important Files
@@ -86,3 +86,14 @@ jobs: # Job 1: Build Moon Star Publicity Application
             - name: Verify Directories
               run: |
                 test -d assets
+            
+            # Step 11: Upload Artifact
+            - name: Upload Artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: moonstart-v2024
+                path: |
+                  assets/
+                  index.php
+                  mail.php
+                  README.md
