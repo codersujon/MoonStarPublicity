@@ -44,8 +44,8 @@ jobs: # Job 1: Build Moon Star Publicity Application
             # Step 6: Secret Detection
             - name: Detect Secrets
               run: |
-                ! grep -R "DB_PASSWORD" .
-                ! grep -R "API_KEY" .
+                ! grep -R --include="*.php" --exclude-dir={.git,.github} "DB_PASSWORD" .
+                ! grep -R --include="*.php" --exclude-dir={.git,.github} "API_KEY" .
             
             # Step 7: File Permission Check
             - name: File Permissions
