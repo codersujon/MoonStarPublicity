@@ -67,9 +67,11 @@ jobs:
     
     # Job 2: Test Moon Star Publicity Application
     Test:
-      name: Testing MoonStar Publicity
+      name: Testing MoonStar App
       runs-on: ubuntu-latest # Runner
       needs: Build
+      env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
 
       steps:
 
