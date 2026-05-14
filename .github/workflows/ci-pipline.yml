@@ -128,7 +128,7 @@ jobs:
     
     # Job 3: Build Docker Image for Moon Star App
     Docker-Image-Build:
-        name: Docker-Build
+        name: Docker-Image-Build
         runs-on: ubuntu-latest # Runner
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
@@ -142,7 +142,7 @@ jobs:
             
             # Step 2: Download Artifact
             - name: Download Artifact
-              uses: actions/download-artifact@v4.4.3
+              uses: actions/download-artifact@v4
               with:
                 name: moonstart-v2024
                 path: target/
