@@ -54,19 +54,27 @@ jobs: # Job 1: Build Moon Star Publicity Application
             # Step 8: Large File Detection
             - name: Detect Large Files
               run: | 
-                if find . -type f -size +50M \
-                  ! -path "./.git/*" \
-                  ! -path "./vendor/*" \
-                  ! -path "./node_modules/*"; then
+                echo "🔍 Checking for files larger than 50MB..."
 
-                  echo "❌ Large file detected!"
-                  find . -type f -size +50M \
+                LARGE_FILES=$(find . -type f -size +50M \
                   ! -path "./.git/*" \
                   ! -path "./vendor/*" \
-                  ! -path "./node_modules/*" -print
+                  ! -path "./node_modules/*")
+
+                if [ -n "$LARGE_FILES" ]; then
+                  echo "❌ Large file(s) detected:"
+                  echo "$LARGE_FILES"
+
+                  echo ""
+                  echo "📌 File sizes:"
+                  for file in $LARGE_FILES; do
+                    ls -lh "$file"
+                  done
 
                   exit 1
                 fi
+                
+                echo "✅ No large files found"
 
             # Step 9: Validate Important Files
             - name: Verify Required Files
