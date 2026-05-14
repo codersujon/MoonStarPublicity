@@ -66,12 +66,12 @@ jobs:
                   README.md
     
     # Job 2: Test Moon Star Publicity Application
-    Test:
+    MoonStar-App-Test:
       name: Testing MoonStar App
       runs-on: ubuntu-latest # Runner
-      needs: Build
       env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
+      needs: Build
 
       steps:
 
@@ -125,4 +125,52 @@ jobs:
             fi
 
             echo "✅ No large files found"
+    
+    # Job 3: Build Docker Image for Moon Star App
+    Docker-Image-Build:
+        name: Docker-Build
+        runs-on: ubuntu-latest # Runner
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
+        needs: MoonStar-App-Test
+
+        steps:
+
+            # Step 1: Checkout Repository
+            - name: Checkout Repository
+              uses: actions/checkout@v4.2.2
+            
+            # Step 2: Download Artifact
+            - name: Download Artifact
+              uses: actions/download-artifact@v4.4.3
+              with:
+                name: moonstart-v2024
+                path: target/
+            
+            # Step 3: Build Docker Image
+            - name: Build Docker Image
+              run: |
+                docker build -t ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:${{ github.sha }} .
+                docker tag ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:${{ github.sha }} \
+                           ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:latest
+            
+            # Step 4: Save Docker Image as Artifact Save Mens Memory save CI machine
+            - name: Save Docker Image 
+              run: |
+                docker save \
+                  ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:${{ github.sha }} \
+                  ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:latest \
+                  -o moonstar_2024.tar
+            
+            # Step 5: Upload Docker Image in GitHub Actions
+            - name: Upload Docker Image Artifact
+              uses: actions/upload-artifact@v4.4.3
+              with:
+                name: docker-image
+                path: moonstar_2024.tar
+            
+
+
+
+
 
