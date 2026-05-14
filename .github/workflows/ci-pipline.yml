@@ -34,12 +34,12 @@ jobs: # Job 1: Build Moon Star Publicity Application
                 ! -path "./vendor/*" \
                 -print0 | xargs -0 -n1 php -l
 
-            # Step 5: Dangerous Function Detection
+            # Step 5: Dangerous Function Detection (Only PHP file Check)
             - name: Detect Debug Functions
               run: |
-                ! grep -R "var_dump(" .
-                ! grep -R "print_r(" .
-                ! grep -R "die(" .
+                ! grep -R "var_dump(" --include="*.php" .
+                ! grep -R "print_r(" --include="*.php" .
+                ! grep -R "die(" --include="*.php" .
     
             # Step 6: Secret Detection
             - name: Detect Secrets
