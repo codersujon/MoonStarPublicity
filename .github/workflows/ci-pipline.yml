@@ -5,9 +5,10 @@ on:
         branches:
             - main
 
-jobs: # Job 1: Build Moon Star Publicity Application 
+jobs: 
+    # Job 1: Build Moon Star Publicity Application 
     Build:
-        name: Build
+        name: Build MoonStar App
         runs-on: ubuntu-latest # Runner
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
@@ -28,68 +29,32 @@ jobs: # Job 1: Build Moon Star Publicity Application
             # Step 3: Verify PHP Version
             - name: Verify PHP Version
               run: php -v
-            
-            # ‍Step 4: PHP Syntax Check
-            - name: PHP Syntax Check
-              run: |
-                find . -type f -name "*.php" \
-                ! -path "./vendor/*" \
-                -print0 | xargs -0 -n1 php -l
 
-            # Step 5: Dangerous Function Detection (Only PHP file Check)
+            # Step 4: Dangerous Function Detection (Only PHP file Check)
             - name: Detect Debug Functions
               run: |
                 ! grep -R "var_dump(" --include="*.php" .
                 ! grep -R "print_r(" --include="*.php" .
                 ! grep -R "die(" --include="*.php" .
     
-            # Step 6: Secret Detection
+            # Step 5: Secret Detection
             - name: Detect Secrets
               run: |
                 ! grep -R --include="*.php" --exclude-dir={.git,.github} "DB_PASSWORD" .
                 ! grep -R --include="*.php" --exclude-dir={.git,.github} "API_KEY" .
             
-            # Step 7: File Permission Check
-            - name: File Permissions
-              run: ls -la
-            
-            # Step 8: Large File Detection
-            - name: Detect Large Files
-              run: | 
-                echo "🔍 Checking for files larger than 50MB..."
-
-                LARGE_FILES=$(find . -type f -size +50M \
-                  ! -path "./.git/*" \
-                  ! -path "./vendor/*" \
-                  ! -path "./node_modules/*")
-
-                if [ -n "$LARGE_FILES" ]; then
-                  echo "❌ Large file(s) detected:"
-                  echo "$LARGE_FILES"
-
-                  echo ""
-                  echo "📌 File sizes:"
-                  for file in $LARGE_FILES; do
-                    ls -lh "$file"
-                  done
-
-                  exit 1
-                fi
-
-                echo "✅ No large files found"
-
-            # Step 9: Validate Important Files
+            # Step 6: Validate Important Files
             - name: Verify Required Files
               run: |
                 test -f index.php
                 test -f mail.php
 
-            # Step 10: Verify Directories
+            # Step 7: Verify Directories
             - name: Verify Directories
               run: |
                 test -d assets
             
-            # Step 11: Upload Artifact
+            # Step 8: Upload Artifact
             - name: Upload Artifact
               uses: actions/upload-artifact@v4.4.3
               with:
@@ -99,3 +64,63 @@ jobs: # Job 1: Build Moon Star Publicity Application
                   index.php
                   mail.php
                   README.md
+    
+    # Job 2: Test Moon Star Publicity Application
+    Test:
+      name: Testing MoonStar Publicity
+      runs-on: ubuntu-latest # Runner
+      needs: Build
+
+      steps:
+
+        # Step 1: Checkout Repository
+        - name: Checkout Repository
+          uses: actions/checkout@v4.2.2
+        
+        # Step 2: Setup PHP
+        - name: Setup PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: '8.4'
+            extensions: mbstring, xml, curl, mysqli
+            
+        # Step 3: Verify PHP Version
+        - name: Verify PHP Version
+          run: php -v
+        
+        # Step 4: File Permission Check
+        - name: File Permissions
+          run: ls -la
+        
+        # ‍Step 5: Unit Test (PHP Syntex Test)
+        - name: PHP Syntax Check
+          run: |
+            find . -type f -name "*.php" \
+            ! -path "./vendor/*" \
+            -print0 | xargs -0 -n1 php -l
+        
+        # Step 6: Large File Detection
+        - name: Detect Large Files
+          run: | 
+            echo "🔍 Checking for files larger than 50MB..."
+
+            LARGE_FILES=$(find . -type f -size +50M \
+                ! -path "./.git/*" \
+                ! -path "./vendor/*" \
+                ! -path "./node_modules/*")
+
+            if [ -n "$LARGE_FILES" ]; then
+                echo "❌ Large file(s) detected:"
+                echo "$LARGE_FILES"
+
+                echo ""
+                echo "📌 File sizes:"
+                for file in $LARGE_FILES; do
+                  ls -lh "$file"
+                done
+
+                  exit 1
+            fi
+
+            echo "✅ No large files found"
+
