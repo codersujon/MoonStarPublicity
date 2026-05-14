@@ -9,12 +9,14 @@ jobs: # Job 1: Build Moon Star Publicity Application
     Build:
         name: Build
         runs-on: ubuntu-latest # Runner
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # For Remove NodeJSs 24 Warning
     
         steps:
 
             # Step 1: Checkout Repository
             - name: Checkout Repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v4.2.2
 
             # Step 2: Setup PHP
             - name: Setup PHP
@@ -89,7 +91,7 @@ jobs: # Job 1: Build Moon Star Publicity Application
             
             # Step 11: Upload Artifact
             - name: Upload Artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v4.4.3
               with:
                 name: moonstart-v2024
                 path: |
