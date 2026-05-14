@@ -2578,7 +2578,7 @@ label {
 
 @media (max-width: 991.98px) {
   .services {
-    padding: 120px 0 90px;
+    padding: 80px 0 50px;
   }
 }
 
@@ -2776,7 +2776,7 @@ label {
 
 .services__style__two {
   background: #F7F7F7;
-  padding: 120px 0 120px;
+  padding: 80px 0 80px;
 }
 
 .services__style__two .section__title {
@@ -2902,7 +2902,7 @@ label {
 
 @media (max-width: 991.98px) {
   .services__details {
-    padding: 120px 0 120px;
+    padding: 80px 0 80px;
   }
 }
 
@@ -3157,7 +3157,7 @@ label {
 
 @media (max-width: 991.98px) {
   .portfolio {
-    padding: 120px 0 120px;
+    padding: 80px 0 80px;
   }
 }
 
@@ -3497,7 +3497,7 @@ label {
 }
 
 .portfolio__inner {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .portfolio__inner__nav {
@@ -3560,7 +3560,7 @@ label {
 
 @media (max-width: 991.98px) {
   .portfolio__inner__item {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   .portfolio__inner__item:last-child {

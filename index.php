@@ -70,21 +70,13 @@
                                                 <li><a href="#digitalPrinting" data-filter=".cat-two">Digital Printing</a></li>
                                                 <li><a href="#Neon" data-filter=".cat-three">Neon Sign</a></li>
                                                 <li><a href="#eventActivation" data-filter=".cat-four">Event Activation</a></li>
-                                                <li><a href="#interD" data-filter=".cat-five">Interior Design</a></li>
+                                                <li><a href="#interD" data-filter=".cat-five">Office & Showroom Interior</a></li>
                                                 <li><a href="#MegaSign" data-filter=".cat-six">Mega Sign</a></li>
                                                 <li><a href="#posm" data-filter=".cat-seven">POSM</a></li>
                                                 <li><a href="#NonlitShopSign" data-filter=".cat-eight">Nonlit / Shop Sign</a></li>
                                                 <li><a href="#ProfileLightBox" data-filter=".cat-nine">Profile Light Box</a></li>
                                                 <li><a href="#ProjectBoard" data-filter=".cat-ten">Project Board</a></li>
                                                 <li><a href="#WallPainting" data-filter=".cat-eleven">Wall Painting</a></li>
-                                                
-                                                <!-- 
-                                                <li><a href="#mvc">ACP Branding</a></li>
-                                                <li><a href="#mvc">LED Display</a></li>
-                                                <li><a href="#mvc">Metal, SS Letter</a></li>
-                                                <li><a href="#mvc">Showroom Branding</a></li>
-                                                <li><a href="#mvc">Market Branding</a></li>
-                                                <li><a href="#mvc">Gift Item</a></li> -->
                                             </ul>
                                         </li>
                                         <li><a href="#portfolio">Portfolio</a></li>
@@ -133,18 +125,18 @@
         <section class="slider-area">
             <div class="single-slider single-slide-1 pt-120 pb-120"></div>
             <div class="single-slider single-slide-2 pt-120 pb-120"></div>
-            <div class="single-slider single-slide-7 pt-120 pb-120"></div>
+            <div class="single-slider single-slide-3 pt-120 pb-120"></div>
             <div class="single-slider single-slide-4 pt-120 pb-120"></div>
             <div class="single-slider single-slide-5 pt-120 pb-120"></div>
             <div class="single-slider single-slide-6 pt-120 pb-120"></div>
         </section>
         <!-- slider end -->
         <!-- About Start -->
-        <section class="about-area pt-120 pb-90 grey-bg" id="aboutCompany">
+        <section class="about-area pt-80 pb-90 grey-bg" id="aboutCompany">
             <div class="container">
             <div class="row">
                     <div class="col-12">
-                        <div class="section__title text-center mb-80 wow zoomIn" data-wow-delay=".1s">
+                        <div class="section__title text-center mb-120 wow zoomIn" data-wow-delay=".1s">
                             <h2 class="title">Our Company</h2>
                         </div>
                     </div>
@@ -207,7 +199,7 @@
                 </div>
         </section>
         <!-- Message From Propitor -->
-        <section class="MsgProprietor pt-120 pb-120" id="MsgProprietor">
+        <section class="MsgProprietor pt-80 pb-50" id="MsgProprietor">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -851,7 +843,7 @@
         </section>
         <!-- portfolio-area-end -->
         <!-- partner-area -->
-        <section class="clients pt-120 pb-120" id="clients">
+        <section class="clients pt-80 pb-50" id="clients">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -1063,7 +1055,7 @@
         </div>
         <!-- contact-area-end -->
         <!-- contact-map -->
-        <section id="contact-map" class="pt-120 pb-60">
+        <section id="contact-map" class="pt-80 pb-50">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1139,7 +1131,7 @@
         <!-- contact-info-area-end -->
         
         <!-- Footer Top Start -->
-        <div class="FooterTop pt-120 pb-70">
+        <div class="FooterTop pt-80 pb-50">
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-3 col-lg-3 col-sm-6">
