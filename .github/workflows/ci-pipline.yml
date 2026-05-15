@@ -6,7 +6,7 @@ on:
             - main
 
 jobs: 
-    # Job 1: Build Moon Star Publicity Application 
+    # Job 1: Build Moon Star Publicity App 
     Build:
         name: Build MoonStar App
         runs-on: ubuntu-latest # Runner
@@ -63,7 +63,7 @@ jobs:
                   mail.php
                   README.md
     
-    # Job 2: Test Moon Star Publicity Application
+    # Job 2: Test Moon Star Publicity App
     MoonStar-App-Test:
       name: Testing MoonStar App
       runs-on: ubuntu-latest # Runner
