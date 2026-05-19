@@ -1,4 +1,4 @@
-name: Moon Star Publicity
+name: Build and Push Docker Image(Moon Star Publicity)
 
 on:
     push:
@@ -132,7 +132,7 @@ jobs:
 
             # Step 1: Checkout Repository
             - name: Checkout Repository
-              uses: actions/checkout@v4.2.2
+              uses: actions/checkout@v5
             
             # Step 2: Download Artifact
             - name: Download Artifact
