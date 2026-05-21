@@ -27,14 +27,14 @@ jobs:
                 password: ${{ secrets.GITOPS_TOKEN }}
             
             # Step 3: Deploy to cPanel
-            - name: Deploy to Cpanel
+            - name: Deploy to EC2
               uses: appleboy/ssh-action@v0.1.6
               env:
                 IMAGE: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}
               with:
-                host: ${{ secrets.CPANEL_HOST }}
-                username: moonstar
-                key: ${{ secrets.CPANEL_SSH_KEY }}
+                host: ${{ secrets.EC2_HOST }}
+                username: ubuntu
+                key: ${{ secrets.EC2_SSH_KEY }}
                 envs: IMAGE
                 script: |
                   echo "Deploying $IMAGE"
